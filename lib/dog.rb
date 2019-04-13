@@ -110,7 +110,8 @@ class Dog
     if dog
       self.find_by_name(name)
     else
-      self.create
+      self.create({:name => name, :breed => breed})
+    end
   end
   
 end
