@@ -70,7 +70,7 @@ class Dog
   
   def create(hash)
     new_dog = self.new(hash)
-    
+    new_dog.save
   end
   
 end
