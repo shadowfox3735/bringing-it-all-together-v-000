@@ -106,6 +106,11 @@ class Dog
     SQL
 
     dog = DB[:conn].execute(sql, name, breed).first
+    
+    if dog
+      self.find_by_name(name)
+    else
+      self.create
   end
   
 end
