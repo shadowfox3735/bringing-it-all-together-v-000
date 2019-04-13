@@ -99,8 +99,8 @@ class Dog
     end.first
   end
   
-  def self.find_or_create_by(name:, breed:)
-    if self.find_by_name(name) && self.find_by_breed
+  def self.find_or_create_by(name:, breed:)(
+    if self.find_by_name(name) && self.find_by_breed(breed)
   end
   
 end
